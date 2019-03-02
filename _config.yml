@@ -5,6 +5,7 @@ title: "Meine Seite"
 description: "Beschreibung"
 
 teaser: teaser.png
+locale: de
 url: "https://danny.nullzwo.dev"
 
 owner:
