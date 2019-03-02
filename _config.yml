@@ -1,0 +1,16 @@
+repository: Danny02/danny02.github.io
+remote_theme: danny02/skinny-bones-jekyll
+
+title: "Meine Seite"
+description: "Beschreibung"
+
+teaser: teaser.png
+url: "https://danny.nullzwo.dev"
+
+owner:
+  name: "Daniel Heinrich"
+  email: "dannynullzwo@gmail.com"
+  twitter: "@DannyNullZwo"
+  bio: "Software Developer"
+  avatar: me160.jpg # 160x160 px image for author byline
+
