@@ -5,8 +5,16 @@ title: "Meine Seite"
 description: "Beschreibung"
 
 teaser: teaser.png
-locale: de
+locale: en
 url: "https://danny.nullzwo.dev"
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+paginate: 3
+
+future: true
 
 owner:
   name: "Daniel Heinrich"
