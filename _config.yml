@@ -1,20 +1,51 @@
 repository: Danny02/danny02.github.io
-remote_theme: danny02/skinny-bones-jekyll
+#remote_theme: danny02/skinny-bones-jekyll
+remote_theme: "mmistakes/so-simple-theme@3.2.0"
 
-title: "Meine Seite"
-description: "Beschreibung"
+title: "Daniel Heinrich"
+description: "Software Developer"
 
 teaser: teaser.png
 locale: en
 url: "https://danny.nullzwo.dev"
+#logo: "/images/so-simple-site-logo.png"
+
+#skin: "/assets/css/skins/dark.css"
+
+read_time: true
+words_per_minute: 200
+
+date_format: "%-d %B, %Y"
+mathjax:
+  enable: true
+#  combo: "tex-mml-chtml"
+#  tags: "none"
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+
+search_full_content: true
+
+category_archive_path: "/categories/#"
+tag_archive_path: "/tags/#"
 
 plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-feed
   - jekyll-paginate
 
 paginate: 3
+paginate_path: /page:num/
 
 future: true
+
+feed:
+  path: atom.xml
+
+copyright: "This site is made with <3 by *me, myself, and I*."
 
 owner:
   name: "Daniel Heinrich"
@@ -22,4 +53,49 @@ owner:
   twitter: "@DannyNullZwo"
   bio: "Software Developer"
   avatar: me160.jpg # 160x160 px image for author byline
+
+
+twitter:
+  username: DannyNullZwo
+
+defaults:
+  # Post defaults
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      share: true
+
+# Site Author
+author:
+  name: Daniel Heinrich
+  picture: /images/me160.jpg
+  email: "dannynullzwo@gmail.com"
+  twitter: DannyNullZwo
+  links:
+    - title: Twitter
+      url: https://twitter.com/DannyNullZwo
+      icon: fab fa-twitter-square
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/heinrichdaniel/
+      icon: fab fa-linkedin
+    - title: GitHub
+      url: https://github.com/Danny02
+      icon: fab fa-github-square
+
+# Footer Links
+footer_links:
+  - title: Twitter
+    url: https://twitter.com/DannyNullZwo
+    icon: fab fa-twitter-square
+  - title: LinkedIn
+    url: https://www.linkedin.com/in/heinrichdaniel/
+    icon: fab fa-linkedin
+  - title: GitHub
+    url: https://github.com/Danny02
+    icon: fab fa-github-square
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square  
 

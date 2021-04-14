@@ -1,0 +1,11 @@
+# Sample Authors
+# Remove file or replace with your own
+
+Daniel Heinrich:
+  name: Daniel Heinrich
+  picture: /images/me160.jpg
+  twitter: "@DannyNullZwo"
+  links:
+    - title: LinkedIn
+      url: https://www.linkedin.com/in/heinrichdaniel/
+      icon: fab fa-linkedin-square
