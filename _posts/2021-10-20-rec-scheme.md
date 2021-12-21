@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Property Based Testing"
+title:  "Conquering recursion one step at a time"
 categories: presentation
-tags: testing tdd software test pbt java scala  
+tags: scala functional-programming recursion recursion-schemes category-theory senacor devcon talk
 share: true
 ---
 
