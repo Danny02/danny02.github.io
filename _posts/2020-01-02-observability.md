@@ -2,8 +2,11 @@
 layout: post
 title:  "Application Observability"
 categories: presentation
-tags: devops observability logging metrics traces jaeger prometheus opentelemetry  
-image: /images/previews/observability.jpg
+tags: devops observability logging metrics traces jaeger prometheus opentelemetry
+seo:
+  type: BlogPosting
+image: 
+  path: /images/previews/observability.jpg
 share: true
 ---
 

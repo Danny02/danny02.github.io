@@ -3,7 +3,10 @@ layout: post
 title:  "Conquering recursion one step at a time"
 categories: presentation
 tags: scala functional-programming recursion recursion-schemes category-theory senacor devcon talk
-image: /images/previews/rec-scheme.jpg
+seo:
+  type: BlogPosting
+image: 
+  path: /images/previews/rec-scheme.jpg
 share: true
 ---
 

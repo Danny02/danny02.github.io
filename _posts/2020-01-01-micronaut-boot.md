@@ -3,7 +3,10 @@ layout: post
 title:  "Micronaut VS Spring-Boot"
 categories: presentation
 tags: comparision framework spring-boot spring micronaut hibernate jdbc sql
-image: /images/previews/micronaut-vs-boot.jpg
+seo:
+  type: BlogPosting
+image: 
+  path: /images/previews/micronaut-vs-boot.jpg
 share: true
 ---
 
