@@ -7,6 +7,7 @@ seo:
   type: BlogPosting
 image: 
   path: /images/previews/rec-scheme.jpg
+  hide: true
 share: true
 ---
 

@@ -1,6 +1,6 @@
 repository: Danny02/danny02.github.io
 #remote_theme: danny02/skinny-bones-jekyll
-remote_theme: "mmistakes/so-simple-theme@3.2.0"
+remote_theme: "danny02/so-simple-theme@3.2.1"
 
 title: "Daniel Heinrich"
 description: "A blog dedicated to things I find interesting about software development"

@@ -7,6 +7,7 @@ seo:
   type: BlogPosting
 image: 
   path: /images/previews/micronaut-vs-boot.jpg
+  hide: true
 share: true
 ---
 

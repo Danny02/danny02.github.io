@@ -7,6 +7,7 @@ seo:
   type: BlogPosting
 image: 
   path: /images/previews/observability.jpg
+  hide: true
 share: true
 ---
 
