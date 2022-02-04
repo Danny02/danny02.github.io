@@ -3,7 +3,7 @@ repository: Danny02/danny02.github.io
 remote_theme: "mmistakes/so-simple-theme@3.2.0"
 
 title: "Daniel Heinrich"
-description: "Software Developer"
+description: "A blog dedicated to things I find interesting about software development"
 
 teaser: teaser.png
 locale: en
@@ -57,6 +57,7 @@ owner:
 
 twitter:
   username: DannyNullZwo
+  card: summary
 
 defaults:
   # Post defaults

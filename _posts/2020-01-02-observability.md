@@ -1,18 +1,18 @@
 ---
 layout: post
-title:  "Conquering recursion one step at a time"
+title:  "Application Observability"
 categories: presentation
-tags: scala functional-programming recursion recursion-schemes category-theory senacor devcon talk
-image: /images/previews/rec-scheme.jpg
+tags: devops observability logging metrics traces jaeger prometheus opentelemetry  
+image: /images/previews/observability.jpg
 share: true
 ---
 
-Rekrusive Datenstrukturen sind allgegenwärtig und wollen verarbeitet werden. Operationen die mit diesen Strukturen arbeiten sind einerseits rekursive und können andererseits nicht mit anderen Strukturen wiederverwendet werden.
+Die Observability einer Anwendung ist der Grundpfeiler einer erfolgreichen DevOps Strategie. In dieser Präsentation
+werden die drei Pfeiler, die eine Anwendung beobachtbar machen, beschrieben und verglichen.
 
-Recursion Schemes zeigen eine Pfad um die Art und Weise mit solchen Strukturen zu arbeiten zu generalisieren. Desweiteren erlauben sie Fachlichkeit von den rekursiven Operationen zu trennen.
 
 # Slides
-<script async class="speakerdeck-embed" data-id="b879519cc56f4291a5aacd55173bf6bf" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+<script async class="speakerdeck-embed" data-id="e5b1a418144e49b4b7ac58266ab37ea9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 <p xmlns:dct="http://purl.org/dc/terms/" xmlns:vcard="http://www.w3.org/2001/vcard-rdf/3.0#">
   <a rel="license"
