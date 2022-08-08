@@ -11,9 +11,11 @@ image:
 share: true
 ---
 
-Rekrusive Datenstrukturen sind allgegenwärtig und wollen verarbeitet werden. Operationen die mit diesen Strukturen arbeiten sind einerseits rekursive und können andererseits nicht mit anderen Strukturen wiederverwendet werden.
+Recursive data structures are everywhere and need to be processed. Operations on these structures are recursive and can
+not be reused on other data structures.
 
-Recursion Schemes zeigen eine Pfad um die Art und Weise mit solchen Strukturen zu arbeiten zu generalisieren. Desweiteren erlauben sie Fachlichkeit von den rekursiven Operationen zu trennen.
+Recursion schemes show a path to generalizing the way of working with these data structures. They also enable us to 
+separate our business logic from recursion.
 
 # Slides
 <script async class="speakerdeck-embed" data-id="b879519cc56f4291a5aacd55173bf6bf" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>

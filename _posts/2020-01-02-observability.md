@@ -11,9 +11,8 @@ image:
 share: true
 ---
 
-Die Observability einer Anwendung ist der Grundpfeiler einer erfolgreichen DevOps Strategie. In dieser Präsentation
-werden die drei Pfeiler, die eine Anwendung beobachtbar machen, beschrieben und verglichen.
-
+The keystone of a successful Dev-Ops strategy is the observability of our applications. This presentation explains the
+three pillars which make an application observable.
 
 # Slides
 <script async class="speakerdeck-embed" data-id="e5b1a418144e49b4b7ac58266ab37ea9" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
