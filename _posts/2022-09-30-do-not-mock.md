@@ -19,9 +19,9 @@ This is a concise presentation that just barely touches the subject at hand.
 
 # Sources
 
-1. http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html
-2. https://site.mockito.org/javadoc/current/org/mockito/Mockito.html
-3. https://martinfowler.com/bliki/UnitTest.html
-4. https://github.com/Danny02/do-not-mock-examples
+1. [Mocks, Fakes, Stubs and Dummies](http://xunitpatterns.com/Mocks,%20Fakes,%20Stubs%20and%20Dummies.html)
+2. [Mockito Javadoc](https://site.mockito.org/javadoc/current/org/mockito/Mockito.html)
+3. [Martin Fowler - UnitTest](https://martinfowler.com/bliki/UnitTest.html)
+4. [Github Example Code](https://github.com/Danny02/do-not-mock-examples)
 
 {% include copyright.html title=page.title%}
