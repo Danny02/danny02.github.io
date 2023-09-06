@@ -1,0 +1,17 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+sitemap: false
+---
+
+@charset "utf-8";
+
+@import "so-simple";
+
+div.highlighter-rouge,
+figure.highlight {
+  line-height: 1.1;
+}
+
+.highlight code {
+  font-size: 0.8rem;
+}
