@@ -1,6 +1,6 @@
 repository: Danny02/danny02.github.io
 #remote_theme: danny02/skinny-bones-jekyll
-remote_theme: "danny02/so-simple-theme@3.2.1"
+remote_theme: "danny02/so-simple-theme@3.2.2"
 
 title: "Daniel Heinrich"
 description: "A blog dedicated to things I find interesting about software development"
@@ -14,6 +14,8 @@ url: "https://danny.nullzwo.dev"
 
 read_time: true
 words_per_minute: 200
+
+goat_counter: dannynullzwo
 
 date_format: "%-d %B, %Y"
 mathjax:
