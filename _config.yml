@@ -17,7 +17,7 @@ words_per_minute: 200
 
 goat_counter:
   domain: stats.nullzwo.dev
-  cdn: gca.nullzwo.dev
+  cdn: danny.nullzwo.dev/assets/js
 
 date_format: "%-d %B, %Y"
 mathjax:
