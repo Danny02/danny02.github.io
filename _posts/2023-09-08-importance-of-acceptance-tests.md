@@ -1,34 +1,32 @@
 ---
 layout: post
-title: "Draft: Always write acceptance test first"
+title: "Always write acceptance test first"
 categories: case-study
 tags: java programming test tdd bdd
-hidden: true
 seo:
   type: BlogPosting
 image:
-  path: /images/previews/do-not-mock.jpg
-  hide: true
+  path: /images/previews/accept-test-first.webp
 share: true
 ---
 
-Blackbox acceptance tests provide a user viewpoint and stability 
+black-box acceptance tests provide a user viewpoint and stability 
 amidst changing requirements. The secret sauce? Write tests before
 implementation for optimal reliability.
 
 # tl;dr
-An acceptance test is a **blackbox** test from a **user** 
+An acceptance test is a **black-box** test from a **user's** 
 perspective.
-- when providing an API, another developer can be this **user**
-- a test that does not presume anything other than the
-public API is a **blackbox** test
+- When providing an API, another developer can be this **user**
+- A test that does not presume anything other than the
+public API is a **black-box** test
 
-These properties give test the following benefits:
-- it is straightforward to translate requirements into tests
-- they remain stable despite changes from future requirements
+These properties give tests the following benefits:
+- It is straightforward to translate requirements into tests
+- They remain stable despite changes through future requirements
 
 Real stability in tests comes from writing them as genuine 
-**blackbox** tests. This approach is notably more manageable when 
+**black-box** tests. This approach is notably more manageable when 
 tests are crafted **before** the actual implementation.
 
 # A little tale about changing requirements
@@ -37,14 +35,14 @@ A not so long time ago, I stumbled over a change request in the
 project I'm currently working on.
 There was a component that over time received many changes. 
 The requirements had changed multiple times over the past months, 
-and I was not really sure if all the code made perfectly sense 
+and I was not really sure if all the code made perfect sense 
 anymore.
 It seemed as if from time to time new requirements had partially
 overwritten the functionality of older requirements. And it 
 was not really clear if the authors had made those changes 
 consciously or not.
 
-In the following chapter, I will present an example which tries
+In the following chapter, I will present an example that tries
 to highlight the importance of proper acceptance tests. 
 The example is a very condensed version of one of the classes
 of this component.
@@ -167,7 +165,7 @@ Scenario: keeping default
   Then retrieving the value should produce "my-default"
 ```
 
-Our test does not initialize a store with a default value, 
+Our test does not initialize a store with a default value 
 but instead provides a value with the normal `store` method. 
 The correct API usage would have been initializing the store with 
 the constructor.
@@ -175,24 +173,24 @@ the constructor.
 #### How did we end up in this place?
 
 Let's think about the reasons the original author might have 
-thought that this was a correct way to write the test.
+thought that this was the correct way to write the test.
 
 We notice that it actually didn't matter back then if the
 constructor or the store method was called. The constructor was
 just delegating to the store method.
 
 Another thing we notice is that the test is 
-named `shouldNotDeleteValue`. This let me believe that something 
+named `shouldNotDeleteValue`. This led me to believe that something 
 like the following might have happened.
 
-1. a dev took a look at the current code and thought about what
-simple change will suffice
-1. the if-statement was quickly added
-1. the dev thought about how to test the if-statement
-1. it did not matter to the dev how the `value` field was set to
+1. A dev took a look at the current code and thought about what
+simple change would suffice
+1. The if-statement was quickly added
+1. The dev thought about how to test the if-statement
+1. It did not matter to the dev how the `value` field was set to
 a non-null value, so the `store` method was chosen at random
-1. now a proper name had to be chosen for the test
-1. by looking at the test code it made sens to name it 
+1. Now a proper name had to be chosen for the test
+1. By looking at the test code it made sense to name it 
 `shouldNotDeleteValue`
 
 ## The order of working
@@ -202,7 +200,7 @@ The existing code was developed in the following order.
 requirement -> code -> test code -> test case
 ```
 Like in a game of
-[telephone](https://en.wikipedia.org/wiki/Chinese_whispers)
+[telephone](https://en.wikipedia.org/wiki/Chinese_whispers),
 information was lost at every step.
 
 While working on a task, it is perfectly normal for a developer
@@ -212,12 +210,12 @@ The `test code` is based on the written `code` and so very likely
 a **highly coupled white-box test**.
 
 The name of the `test-case` is based on the `test code` and 
-because of that does no longer bear any resemblance of 
+because of that does no longer bear any resemblance to 
 the original `requirement`.
 
 ### Why does it even matter?
 
-We have a failing test even thought our 
+We have a failing test even though our 
 [refactoring](#refactoring) of the data store is compatible 
 with the 
 [first requirement](#first-feature-keep-default-until-real-value-is-provided).
@@ -231,16 +229,16 @@ second feature is developed by a developer which does not know
 anything about the first requirement. This developer now has to 
 deduce the original requirement from the failing test.
 
-This is required, because the dev has to either:
-- "fix" the test (when the underlying API changed)
-- change the new code to fit both requirements
-- check if the old requirement is obsolete
+This is required because the dev has to either:
+- "Fix" the test (when the underlying API changed)
+- Change the new code to fit both requirements
+- Check if the old requirement is obsolete
 
 If we look back, our test is named `shouldNotDeleteValue`. This 
 name does not provide any hints that the original requirement had 
 anything to do with the default value.
 
-If I was the developer, I would probably think that I need to 
+If I were the developer, I would probably think that I need to 
 change my implementation to fit this old requirement.
 
 ## How could we improve?
@@ -284,11 +282,11 @@ line above in the test name.
 
 # Lessons learned
 
-- test names are important documentation for future developers
-- highly coupled tests do
-  - hinder refactorings
-  - burdens future developers to discover old requirements
-- the way of working dictates the easiest path that we are 
+- Test names are important documentation for future developers
+- Highly coupled tests do
+  - Hinder refactorings
+  - Burdens future developers to discover old requirements
+- The way of working dictates the easiest path that we are 
 unconsciously following
-- we can nudge ourselves to follow best practices by changing
+- We can nudge ourselves to follow best practices by changing
 the way we are working

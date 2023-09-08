@@ -15,3 +15,10 @@ figure.highlight {
 .highlight code {
   font-size: 0.8rem;
 }
+
+.page-image img {
+  height: 15rem;
+  object-fit: cover;
+  max-width: 1024px;
+  object-position: center bottom;
+}
