@@ -282,11 +282,19 @@ line above in the test name.
 
 # Lessons learned
 
-- Test names are important documentation for future developers
-- Highly coupled tests do
-  - Hinder refactorings
-  - Burdens future developers to discover old requirements
-- The way of working dictates the easiest path that we are 
-unconsciously following
-- We can nudge ourselves to follow best practices by changing
-the way we are working
+As we've explored, our tests can greatly determine the 
+robustness and reliability of our software as it evolves. 
+Embracing proper black-box testing methods that
+prioritize real user experiences and expectations will not 
+only foster better communication between developers but also 
+provide the developed product with lasting flexibility and 
+resilience against change. 
+
+Crucially, we must start at the requirements 
+gathering stage and mold them thoughtfully into test cases 
+before we dive into the actual coding.
+
+We should evaluate our current test processes, scrutinize the 
+sequence of steps taken, and boldly question if there is room for 
+better clarity or more cohesion to the original requirements 
+in our test cases.
