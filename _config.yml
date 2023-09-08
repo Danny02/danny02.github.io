@@ -16,7 +16,7 @@ read_time: true
 words_per_minute: 200
 
 goat_counter:
-  domain: dannynullzwo.goatcounter.com #stats.nullzwo.dev
+  domain: stats.nullzwo.dev
   cdn: danny.nullzwo.dev/assets/js
 
 date_format: "%-d %B, %Y"
