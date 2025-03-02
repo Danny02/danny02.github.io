@@ -1,0 +1,16 @@
+{
+  "name": "html-data-extractor",
+  "version": "1.0.0",
+  "description": "Extract embedded data from HTML files",
+  "main": "extract-embedded-data.js",
+  "scripts": {
+    "extract": "node extract-embedded-data.js"
+  },
+  "dependencies": {
+    "jsdom": "^22.1.0",
+    "mkdirp": "^3.0.1"
+  },
+  "bin": {
+    "extract-embedded-data": "./extract-embedded-data.js"
+  }
+} 
